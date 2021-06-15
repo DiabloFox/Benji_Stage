@@ -26,11 +26,27 @@ body {
 h1 {
     font-size: 40px;
     color: #2C2F83;
-    font-family: Abril fatface, sans-serif;
 }
+
 h1 span {
     position: relative;
 }
+h2 {
+    font-size: 20px;
+    color: #2C2F83;
+}
+h2 span {
+    position: relative;
+}
+
+a {
+    position: relative;
+    top: 35%;
+    font-size: 45px;
+    color :#2C2F83;
+    text-align: center;
+}
+
 .container-btns {
     position: relative;
     top: 5%;
