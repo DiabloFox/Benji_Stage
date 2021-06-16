@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/* Apparence du site en générale */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: rgb(193,226,224);
+    background: linear-gradient(45deg, rgba(193,226,224,1) 0%, rgba(138,206,217,1) 49%, rgba(34,116,133,1) 100%, rgba(0,83,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav-right a:hover {
+    background-color: hsla(0, 0%, 71%, 0.255);
+    color: rgb(44, 44, 44);
+  }
+
+
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+        top: 50%;
+        left: 75%;
+        float: right;
+        padding-left: 75px;
+        padding-top: 50px;
+      }
+  
+  /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+  
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+
+    /* Spacer pour la nav bar droite */
+    .divider_navright{
+        width:50px;
+        height:auto;
+        display:inline-block;
+    }
+
+    /* Boutons de la nav bar */
+    .btn-first {
+        font-family: 'Varela Round', sans-serif;
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 23px;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        width: auto ;
+        color: #383838;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+    }
