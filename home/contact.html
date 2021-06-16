@@ -1,46 +1,45 @@
 <!doctype html>
 <html>
-    <head>
-		<!-- Css Liens -->
-		<link href="Test_Css.css" rel="stylesheet" type="text/css">
-		
-		<!-- Script d'animations (A foutre dans un fichier solo plus tard) -->
-    <script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-    </script>
-    
-    </head>
-	<!-- Chargement du Logo du site -->
-    <body onLoad="MM_preloadImages('Ressources/IMG_Utils/Logo_Big_Hover.png')">
+  <head>
+    <!-- Titre du site & Favicon -->
+    <title>Adeline Riowal-Dupont</title>
+    <link rel="shortcut icon" type="image/jpg" href="Ressources\Favicon\Favicon.png"/>
+    <!-- Metas pour le reférencement -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Reiki">
+        <meta name="keywords" content="Reiki, Prestation, Relaxation, Zen, Recette, Conseils">
+        <meta name="author" content="Adeline Riowal-Dupont">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Liens de fichiers relatifs -->
+        <link rel="stylesheet" href="Test_Css.css">
+        <link rel="stylesheet" href="Test_js.js">
+    <!-- Liens fronts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+	                      <!-- Chargement du Logo du site -->
+        <body onLoad="MM_preloadImages('Ressources/IMG_Utils/Logo_Big_Hover.png')">
     	<header>
-		<!-- Nav Bar pour mettre tout les boutons dedans -->
-      		<nav>
-        <!-- Image Logo avec animation vers "Hover Img" modifiable dans le dossier Utils_IMG"-->
-				<a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Logo','','Ressources/IMG_Utils/Logo_Big_Hover.png',1)"><img src="Ressources/IMG_Utils/Logo_Big.png" alt="Back to Home" width="128" height="128" id="Logo"></a>
-				<!-- Test bouton (mettre du css plus tard)-->
-        <input type="button" name="button" id="button" value="Envoyer">
-		
-			</nav>
+                        <!-- Gestion de la nav bar -->
+          <div class="topnav">
+
+                        <!-- Logo gauche du site clickable (left - default) -->
+            <a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Logo','','Ressources/IMG_Utils/Logo_Big_Hover.png',1)"><img src="Ressources/IMG_Utils/Logo_Big.png" alt="Back to Home" width="128" height="128" id="Logo"></a>
+
+                        <!-- Buttons alligner par aport a la droit  -->
+          <div class="topnav-right">
+            <a href="reiki.html" class="btn-first b1" >LE REIKI</a>
+              <div class="divider_navright"></div>
+            <a href="prestations.html" class="btn-first b2" >PRESENTATION</a>
+              <div class="divider_navright"></div>
+            <a href="Tarifs.html" class="btn-first b2" >TARIFS</a>
+              <div class="divider_navright"></div>
+            <a href="Conseils.html" class="btn-first b2" >CONSEILS</a>
+              <div class="divider_navright"></div>
+            <a href="apropos.html" class="btn-first b2" >A PROPOS</a>
+              <div class="divider_navright"></div>
+            <a href="contact.html" class="btn-first b2" >CONTACT</a>
+          </div>
     	</header>
     </body>
 </html>
